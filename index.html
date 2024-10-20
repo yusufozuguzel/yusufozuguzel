@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+</head>
+<body>
+    <h2>HAKKIMDA </h2>
+    <style>
+        h2{ margin-top: 150px;
+            text-align: left;
+         font-size: 30px;
+         font-weight: bold;
+        }
+    </style>
+       
+     <p> Merhaba. Ben Yusuf. 2004 yılında Bitlis'te doğdum</p>
+     <p>Kocaeli'de yaşıyourm. Düzce Üniversitesi Bilgisayar Mühendisliği 1. sınıf öğrencisiyim </p>
+     <style>
+        p{text-align: left;
+        color: antiquewhite;}
+
+     </style>       
+    
+  
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Hakkımda</a></li>
+            <li><a href="iletişim.html">İletişim</a></li>
+            <li><a href="anket.html">Anket</a></li>
+            <li><a href="projelerim.html">Projeler</a></li>
+        </ul>
+    </nav>
+    <style>
+        body {
+            background-color: white; /* Arka plan beyaz */
+            color: rgb(0, 0, 0); /* Yazı rengi siyah */
+            
+            margin: 0; /* Varsayılan kenar boşluklarını kaldır */
+            padding: 20px; /* İçerik etrafında biraz boşluk bırak */
+        }
+        nav {
+            margin-top: -150px; /* Navigasyon için üstte boşluk */
+        }
+        ul {
+            list-style-type: none; /* Madde işaretlerini kaldır */
+            padding: 0; /* İçerideki boşlukları kaldır */
+            display: flex;
+            justify-content: space-between;
+        }
+        li {
+            margin: 5px 0; /* Liste elemanları arasında boşluk */
+            text-align: left ; 
+             margin-top: -60px;
+            margin-bottom: -50px;
+           
+        
+        }
+        ul li a {
+            
+            margin-right: 10px;
+            
+            color: white;
+            
+           
+        }
+        
+    </style>
+    
+    <style>
+        .link-container {
+            display: flex; /* Flexbox ile yatay sıralama */
+            gap: 10px; /* Bağlantılar arası boşluk */
+        }
+        </style>
+
+     <style>
+        body {
+            background-image: url(A\ 3D\ render\ of\ an\ astronaut\ walking\ in\ a\ green\ desert.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        height: 100vh;
+        text-align: right;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        }
+    </style>
+    
+
+</body>
+</html>
+<body>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="close">&times;</span>
+            <h3>Hoş Geldiniz!</h3>
+            <style>h3{
+                color: white;
+            }</style>
+            <p></p>
+        </div>
+    </div>
+
+    <h1></h1>
+    <p></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>body {
+    font-family: Arial, sans-serif;
+    background-color: #08372a;
+    margin: 0;
+    padding: 20px;
+}
+
+.popup {
+    display: none; /* Başlangıçta gizli */
+    position: fixed;
+    z-index: 1; /* Üstte görünmesi için */
+    left: 0;
+    top: 0;
+    width: 100%; /* Tüm ekranı kaplar */
+    height: 100%; /* Tüm ekranı kaplar */
+    background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam arka plan */
+}
+
+.popup-content {
+    background-color: #09432b;
+    margin: 15% auto; /* Üstten ve alttan boşluk */
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px; /* Genişliği isteğe göre ayarlayabilirsiniz */
+    text-align: center; /* İçerikleri ortalar */
+}
+
+.close {
+    color: #aaa;
+    float: right; /* Sağ tarafa hizalar */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer; /* İmleci el şeklinde gösterir */
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(255, 255, 255); /* Üzerine gelince rengi değişir */
+    text-decoration: none; /* Altını çizer */
+    cursor: pointer; /* İmleci el şeklinde gösterir */
+}</style>
+<script>// Sayfa yüklendiğinde pop-up'ı göster
+    window.onload = function() {
+        document.getElementById('popup').style.display = 'block';
+    };
+    
+    // Pop-up'ı kapatma işlevi
+    document.getElementById('close').onclick = function() {
+        document.getElementById('popup').style.display = 'none';
+    };
+    
+    // Pop-up dışında bir yere tıklandığında kapatma işlevi
+    window.onclick = function(event) {
+        if (event.target == document.getElementById('popup')) {
+            document.getElementById('popup').style.display = 'none';
+        }
+    };
+    </script>

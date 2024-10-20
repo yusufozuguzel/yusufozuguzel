@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>İletişim Sayfası</title>
+</head>
+<body>
+    <div class="iletisim-container">
+        <h1>İletişim</h1>
+        <form action="mailto:ornek@mail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="isim">İsim Soyisim:</label>
+                <input type="text" id="isim" name="isim" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mesaj">Mesaj:</label>
+                <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+            </div>
+            <button type="submit">Gönder</button>
+        </form>
+        <p class="email-info">E-posta: <a href="mailto:yusufozuguzel1341@gmail.com"></a>yusufozuguzel1341</p>
+    </div>
+</body>
+</html>
+<style>body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.iletisim-container {
+    background-color: #1a15a5;
+    padding: 20px ;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Genişliği isteğe göre ayarlayabilirsiniz */
+    text-align: center; /* Yazıları ortalar */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Alanlar arasında boşluk */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px -10px;
+    border: 1px solid #050505;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50; /* Buton rengi */
+    color: white; /* Yazı rengi */
+    border: none;
+    padding: 20px 35px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Buton üzerine gelince rengi değişir */
+}
+
+.email-info {
+    margin-top: 15px; /* E-posta bilgisi için boşluk */
+}
+</style>
+ <style> 
+    body {background-image: url(An\ abstract\ visual\ of\ artificial\ intelligence.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        height: 100vh;
+        text-align: right;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    
+    
+    }
+
+ </style>
+  <nav>
+    <ul>
+        <li><a href="index.html">Hakkımda</a></li>
+        <li><a href="iletişim.html">İletişim</a></li>
+        <li><a href="anket.html">Anket</a></li>
+        <li><a href="projelerim.html">Projeler</a></li>
+    </ul>
+</nav>
+<style>
+    body {
+        background-color: white; /* Arka plan beyaz */
+        color: rgb(0, 0, 0); /* Yazı rengi siyah */
+        
+        margin: 0; /* Varsayılan kenar boşluklarını kaldır */
+        padding: 20px; /* İçerik etrafında biraz boşluk bırak */
+    }
+    nav {
+        margin-top: -150px; /* Navigasyon için üstte boşluk */
+    }
+    ul {
+        list-style-type: none; /* Madde işaretlerini kaldır */
+        padding: 0; /* İçerideki boşlukları kaldır */
+    }
+    li {
+        margin: 5px 0; /* Liste elemanları arasında boşluk */
+    }
+    ul li a {
+        margin-right: 10px;
+        text-align: right;
+        color: white;
+       
+    }
+</style>
